@@ -35,12 +35,12 @@
     gulp.task('serve', ['sass'], function() {
 
         browserSync.init({
-            server: "./public"
+            server: "./docs"
         });
 
         gulp.watch("dev/js/**/*.js", ['browserify']);
         gulp.watch("dev/scss/*.scss", ['sass']);
-        gulp.watch("public/*.html").on('change', browserSync.reload);
+        gulp.watch("docs/*.html").on('change', browserSync.reload);
     });
 
     // Compile sass into CSS & auto-inject into browsers
@@ -50,7 +50,7 @@
             .pipe(sourcemaps.init())
             .pipe(cssnano())
             .pipe(sourcemaps.write('.'))
-            .pipe(gulp.dest('public/css'))
+            .pipe(gulp.dest('docs/css'))
             .pipe(browserSync.stream());
     });
 
@@ -65,7 +65,7 @@ gulp.task('browserify', function() {
         .pipe(source('main.bundled.js'))
         .pipe(buffer()) // <----- convert from streaming to buffered vinyl file object
         .pipe(uglify())
-        .pipe(gulp.dest('public/js'))
+        .pipe(gulp.dest('docs/js'))
         .pipe(browserSync.stream());
 });
 
