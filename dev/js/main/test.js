@@ -1,7 +1,9 @@
 const $ = require('jquery');
+let you = "youYou";
 
-$('#you').on('click',() =>{
-	alert(":v");	
-});
+
+	// alert(":v");	
+	console.log("you");
+  
 
 module.exports = you;

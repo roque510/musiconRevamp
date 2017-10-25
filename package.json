@@ -13,7 +13,9 @@
     "browser-sync": "^2.18.13",
     "browserify": "^14.4.0",
     "browsersync": "0.0.1-security",
+    "firebase": "^4.6.0",
     "glob": "^7.1.2",
+    "gulp": "^3.9.1",
     "gulp-combine-mq": "^0.4.0",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-connect": "^5.0.0",
@@ -33,6 +35,8 @@
     "pretty-hrtime": "^1.0.3",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
+    "vue": "^2.5.2",
+    "vue.js": "^0.3.2",
     "watchify": "^3.9.0",
     "yargs": "^9.0.1"
   },

@@ -40,13 +40,13 @@
 		<div class="row publicityWrap">
 			<div class="col publicity" >
 				
-				<SCRIPT data-cfasync="false" SRC="//bdv.bidvertiser.com/BidVertiser.dbm?pid=783524&bid=1904697" TYPE="text/javascript"></SCRIPT>
+				<!-- <SCRIPT data-cfasync="false" SRC="//bdv.bidvertiser.com/BidVertiser.dbm?pid=783524&bid= -->1904697" TYPE="text/javascript"></SCRIPT>
 				<a target="_blank" href="http://AR22937.WholeWorld.ws" title=" Usted puede recibir dinero Donado de varias partes del mundo"><img  height="60"src="http://wholeworld.info/en/wp/wp-content/uploads/2017/03/WW3_728x90_light.gif"></a>
 				
 				
 			</div>
 			<div class="col description">
-				<h1>Titulo</h1>
+				<h1 id="postTitle">Titulo</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis similique quasi voluptate qui officia unde dolore ratione quae quam et magni inventore dolorem quos, modi quidem cum quisquam necessitatibus rem.</p>
 			</div>
 		</div>
@@ -54,10 +54,24 @@
 
 	<section class="effect2 a">
 		<div class="row">
-			  <card data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=">
-			    <h1 slot="header">Canyons</h1>
-			    <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			  </card>
+			  <div class="card-bg" data-image="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=">
+			    
+			  </div>
+			  <div class="card-wrap"
+			  @mousemove="handleMouseMove"
+			  @mouseenter="handleMouseEnter"
+			  @mouseleave="handleMouseLeave"
+			  ref="card">
+
+			  <div class="card">
+				<div class="card-bg"><img src="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=" alt=""></div>
+				<div class="card-info">
+				  <h1 name="header">Canyons</h1>
+				  <p name="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				</div>
+			  </div>
+		</div>
+		
 		<!-- 	<div class="card"></div>
 
 			<div class="card"></div>
@@ -69,6 +83,7 @@
 	
 
 	<script src="js/main.bundled.js"></script>
+	
 	
 </body>
 </html>
