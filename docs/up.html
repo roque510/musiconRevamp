@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html style="min-height: 100%;">
+
+  <head style="background-color: red;"><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musicon | Bienvenido</title>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+      
+       <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.1.1/sweetalert2.min.css" />
+
+  <!-- Compiled and minified JavaScript -->
+  
+
+      
+
+  </head>
+
+
+
+
+
+  <h1 style="margin-top: 10px; margin-bottom: 10px; text-shadow: 0 0px 15px#ffffff; font-size: 100px"  id="home" class="htopbanner"><a style="color: white;" href="?pg=inicio">Musicon</a></h1>
+
+ 
+
+
+  <body class="body1">
+
+
+    <div id="modal1" class="modal transparent z-depth-0 ">
+          <div class="modal-content row center transparent" style="margin-left:auto; margin-right:auto;">
+            <div class="spinner colorwheel s12" id="colorwheel">
+              <div class="centerpiece"></div>
+            </div>
+          </div>
+    </div>
+          
+  <h1 class="center">Musicon UP</h1>
+
+	
+
+  <div class="row container" style="margin-top:100px;">
+   <form id="form"> 
+
+<div class="input-field col s12 m12">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="Nombre" name="Nombre" type="text" class="validate">
+          <label for="Nombre">Nombre</label>
+        </div>
+
+  <div class="divider"></div>
+ 
+    
+  
+      <div class="row">
+        
+        <div class="input-field col s12 m6">          
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>File</span>
+              <input id="pic" type="file" name="pic" multiple>
+            </div>
+            <div class="file-path-wrapper">
+              <input id="Foto" class="file-path validate" name="Foto" type="text" placeholder="Upload one or more files">
+            </div>
+          </div>
+        </div>
+        <div class="input-field col s12 m6">
+          <i class="material-icons prefix">web</i>
+          <input id="Url" name="Url" type="tel" class="validate">
+          <label for="Url">Url</label>
+        </div>
+      </div>
+   
+
+
+  </div>
+
+  <div class="row container">
+          <div class="row">
+        <div class="input-field col s12">
+          <textarea id="desc" name="desc" class="materialize-textarea"></textarea>
+          <label for="desc">Descripcion</label>
+        </div>
+      </div>
+  </div>
+</form>
+
+  <div class="row container">
+    <button id="send" class="btn waves-effect waves-light right" type="submit" name="action">Salvar
+        <i class="material-icons right">send</i>
+      </button>   
+  </div>
+  
+
+   
+
+
+</ul>
+
+	
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  	<script src="js/magic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+    $('select').material_select();
+     $('.modal').modal();
+  });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.1.1/sweetalert2.min.js"></script>
+
+
+
+  </body> 
+</html>
+
+<style>
+#URL{
+-webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+      }
+
+</style>

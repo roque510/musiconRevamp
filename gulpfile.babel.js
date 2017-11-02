@@ -63,8 +63,8 @@ gulp.task('browserify', function() {
         .transform("babelify", {presets: ["es2015"]})
         .bundle()
         .pipe(source('main.bundled.js'))
-        .pipe(buffer()) // <----- convert from streaming to buffered vinyl file object
-        .pipe(uglify())
+        //.pipe(buffer()) // <----- convert from streaming to buffered vinyl file object
+        //.pipe(uglify())
         .pipe(gulp.dest('docs/js'))
         .pipe(browserSync.stream());
 });
